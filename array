@@ -1,0 +1,13 @@
+# Find the largest element in an array
+
+def findLargest(arr):
+    largest = arr[0]
+    for num in arr:
+        if num > largest:
+            largest = num
+    return largest
+
+if __name__ == "__main__":
+    n = int(input())
+    arr = list(map(int, input().split()))
+    print(findLargest(arr))
